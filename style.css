@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+body {
+    background-color: #E1D7D4;
+}
+
+.title h1 {
+  color: #e34e45;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tables {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding:20px 30px;
+}
+
+.table {
+  position: relative;
+  color: #ccc;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+
+}
+
+
+.formDiv {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+  position:relative;
+  bottom: 390px;
+  border-radius: 5px;
+
+}
+
+form h2 {
+  color: #e34e45;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+form h4 {
+  padding-left: 10px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+input {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+button{
+  margin-top: 20px;
+  background-color: #008000;
+  padding: 15px;
+  color: white;
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+}
+
+.exit {
+  text-align: right;
+  padding: 10px 10px 0px 0px;
+  color: #ccc;
+}
+
+.exit:hover {
+  cursor: pointer;
+}
+
+.displayNone {
+  display: none;
+}
+
+.reserved {
+  background-color: #adaaaa;
+  cursor: not-allowed;
+}
+
+.available {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.hoverInfo {
+  position: absolute;
+  border: 1px solid black;
+  width: 140px;
+  z-index: 10;
+  left: -27px ;
+  text-align: left;
+  color: black;
+  background-color: #adaaaa;
+  border-radius: 5px;
+  padding:2px 5px;
+}
+
+.hoverInfo span {
+  display: inline-block;
+  font-size: .75em;
+
+}
+
+@media only screen and (max-width: 420px) {
+
+  .formDiv {
+    bottom: 620px;
+  }
+}
