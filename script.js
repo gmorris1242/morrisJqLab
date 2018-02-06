@@ -41,7 +41,7 @@ $(document).ready(function() {
           $(".hoverInfo", this).fadeOut();
         });
       };
-    };
+    }; 
   });
 
   exit.on("click", function() {
